@@ -12,25 +12,26 @@
 <section class="novel-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding-bottom: 50px;">
     
     {% for novela in novelas %}
-    <div class="novel-card" style="width: 220px; background: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; border-radius: 5px; overflow: hidden;">
+    <div class="novel-card" style="width: 220px; background: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column;">
         
-        <div class="cover" style="height: 300px; background: #eee;">
+        <div class="cover" style="height: 300px; background: #eee; overflow: hidden;">
+            {# IMPORTANTE: Asegúrate de que la carpeta 'novelas' esté dentro de 'static' #}
             <img src="{{ url_for('static', filename='novelas/' + novela + '/portada.jpg') }}" 
                  alt="{{ novela }}" 
                  style="width: 100%; height: 100%; object-fit: cover;"
-                 onerror="this.src='https://via.placeholder.com/220x300?text=Sin+Portada'">
+                 onerror="this.onerror=null; this.src='https://placehold.co/220x300?text=Sin+Portada';">
         </div>
 
-        <div class="info" style="padding: 15px;">
-            <h4 style="margin-bottom: 10px; color: #333;">{{ novela }}</h4>
+        <div class="info" style="padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4 style="margin-bottom: 10px; color: #333; font-size: 0.9em; height: 40px; overflow: hidden;">{{ novela }}</h4>
             
-            <a href="{{ url_for('ver_novela', nombre=novela) }}" class="learn-more-button" style="font-size: 12px; border: 2px solid #f38181; color: #f38181; padding: 5px 10px; display: inline-block;">
+            <a href="{{ url_for('ver_novela', nombre=novela) }}" class="learn-more-button" style="font-size: 11px; border: 2px solid #f38181; color: #f38181; padding: 5px 10px; display: inline-block; text-decoration: none; font-weight: bold; border-radius: 3px;">
                 VER VOLÚMENES
             </a>
         </div>
     </div>
     {% else %}
-    <p>Aún no has agregado carpetas en static/novelas/</p>
+    <p style="text-align: center; width: 100%; padding: 40px; color: #666;">No hay novelas registradas en el sistema.</p>
     {% endfor %}
 
 </section>
