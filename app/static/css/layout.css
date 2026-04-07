@@ -219,3 +219,79 @@ a { text-decoration: none; }
     background: var(--accent-red);
     margin: 20px auto;
 }
+
+@media (max-width: 992px) {
+    .header-wrapper, .controls {
+        width: 90%;
+        left: 5%;
+    }
+
+    .banner-inner-wrapper h1 {
+        font-size: 3.5em; /* Reducimos el título gigante */
+    }
+
+    .banner-inner-wrapper h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header y Menú */
+    .header-wrapper {
+        flex-direction: column; /* Logo arriba, menú abajo */
+        gap: 15px;
+        padding-top: 1em;
+    }
+
+    .main-menu {
+        gap: 10px;
+        flex-wrap: wrap; /* Si son muchos items, que bajen a la siguiente línea */
+        justify-content: center;
+    }
+
+    .main-menu li a {
+        font-size: 0.75em;
+    }
+
+    /* Slider Content */
+    .banner-inner-wrapper h1 {
+        font-size: 2.5em; /* Más pequeño para que no se corte */
+    }
+
+    .banner-inner-wrapper h2 {
+        font-size: 1.5em;
+    }
+
+    .line {
+        margin: 1em 0;
+    }
+
+    /* Controles del Slider (las barras de abajo) */
+    .controls {
+        bottom: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .controls label {
+        width: 45%; /* Dos barras por fila en lugar de cuatro */
+        font-size: 0.7em;
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-inner-wrapper h1 {
+        font-size: 1.8em;
+    }
+
+    .learn-more-button a {
+        padding: 0.6em 1.2em;
+        font-size: 0.8em;
+    }
+
+    .main-logo {
+        font-size: 1.5em;
+    }
+}
