@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Novelas{% endblock %}</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Kaushan+Script|Roboto:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-wrapper">
+            <div class="main-logo">NOVELS</div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="{{ url_for('index') }}">Inicio</a></li>
+                    <li><a href="#section-2">Biblioteca</a></li>
+                    <li><a href="#"><span class="fa fa-search"></span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="section-1">
+        <div class="content-slider">
+            <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+            <input type="radio" id="banner2" class="sec-1-input" name="banner">
+            
+            <div class="slider">
+                <div id="top-banner-1" class="banner">
+                    <div class="banner-inner-wrapper">
+                        <h2>Tus historias favoritas</h2>
+                        <h1>Bienvenido<br>al estante</h1>
+                        <div class="line"></div>
+                        <div class="learn-more-button"><a href="#content">Explorar</a></div>
+                    </div>
+                </div>
+                <div id="top-banner-2" class="banner">
+                    <div class="banner-inner-wrapper">
+                        <h2>Solo por diversión</h2>
+                        <h1>Disfruta<br>Diviertete</h1>
+                        <div class="line"></div>
+                        <div class="learn-more-button"><a href="#content">Explorar</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <div class="controls">
+                    <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> Home</label>
+                    <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> Trending</label>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <main id="content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

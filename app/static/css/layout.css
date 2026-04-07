@@ -1,0 +1,221 @@
+/* Variables de CSS Nativo */
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --content-font: 'Roboto', sans-serif;
+    --h3-font: 'Kaushan Script', cursive;
+    --main-color: #fff;
+    --icon-color: #95e1d3;
+    --accent-red: #f38181;
+    --accent-yellow: #fce38a;
+}
+
+/* Estilos Generales */
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    background: var(--main-color);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--main-font);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: var(--main-font);
+    font-size: 1.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: var(--h3-font);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+p {
+    font-family: var(--content-font);
+    font-size: 0.9375em;
+    color: #999;
+}
+
+li { list-style-type: none; }
+a { text-decoration: none; }
+
+/* Header - Estilo MoGo */
+.main-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    background: transparent;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 1.5em;
+}
+
+.main-logo {
+    font-weight: 700;
+    font-size: 1.875em;
+}
+
+.main-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.main-menu li a {
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: 0.875em;
+    padding-bottom: 0.5em;
+    transition: .3s;
+}
+
+.main-menu li a:hover {
+    color: var(--accent-yellow);
+    border-bottom: 3px solid var(--accent-yellow);
+}
+
+/* Section-1 Slider */
+#section-1 {
+    height: 100vh; /* Ajustado para que cubra la pantalla */
+    color: var(--main-color);
+    background-color: #222;
+}
+
+.content-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content-slider input { display: none; }
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: opacity .5s ease;
+}
+
+.banner-inner-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(243,129,129,0.85), rgba(252,227,138,0.85));
+}
+
+.banner-inner-wrapper h2 {
+    font-family: var(--h3-font);
+    font-size: 2.5em;
+    text-transform: none;
+    margin-bottom: 10px;
+}
+
+.banner-inner-wrapper h1 {
+    font-size: 5em;
+    line-height: 1;
+}
+
+.line {
+    width: 4em;
+    height: 3px;
+    background: var(--main-color);
+    margin: 2em 0;
+}
+
+/* Botón Leer Más */
+.learn-more-button a {
+    padding: 0.8em 2em;
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.learn-more-button a:hover {
+    background: var(--main-color);
+    color: var(--accent-red);
+}
+
+/* Controles del Slider */
+.controls {
+    position: absolute;
+    bottom: 30px;
+    width: 70%;
+    left: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls label {
+    width: 23%;
+    border-top: 3px solid #f6eac5;
+    padding-top: 10px;
+    cursor: pointer;
+    color: #f6eac5;
+    font-family: var(--main-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+/* Animación de la barra */
+#banner1:checked ~ .slider #top-banner-1,
+#banner2:checked ~ .slider #top-banner-2 {
+    opacity: 1;
+    z-index: 1;
+}
+
+#banner1:checked ~ nav label:nth-child(1),
+#banner2:checked ~ nav label:nth-child(2) {
+    color: var(--main-color);
+    border-top-color: var(--main-color);
+}
+
+/* Secciones de contenido */
+.section-header {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.line-red {
+    width: 60px;
+    height: 3px;
+    background: var(--accent-red);
+    margin: 20px auto;
+}

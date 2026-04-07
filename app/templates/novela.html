@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %} {{ nombre }} - Volúmenes {% endblock %}
+
+{% block content %}
+<section class="section-header">
+    <h3>Lista de Volúmenes</h3>
+    <h2>{{ nombre }}</h2>
+    <div class="line-red"></div>
+</section>
+
+<div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    <div class="lista-pdf" style="background: #fff; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        {% for vol in volumenes %}
+        <div class="item-volumen" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
+            <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #333;">
+                <i class="fa fa-file-pdf-o" style="color: #f38181; margin-right: 10px;"></i> {{ vol }}
+            </span>
+            
+            <a href="{{ url_for('static', filename='novelas/' + nombre + '/' + vol) }}" 
+               target="_blank" 
+               style="background: #f38181; color: #fff; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 700;">
+                LEER AHORA
+            </a>
+        </div>
+        {% else %}
+        <p style="padding: 20px; text-align: center;">No se encontraron archivos PDF en esta carpeta.</p>
+        {% endfor %}
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="{{ url_for('index') }}" style="color: #999; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">
+            <i class="fa fa-arrow-left"></i> Volver a la biblioteca
+        </a>
+    </div>
+</div>
+{% endblock %}
