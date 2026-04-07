@@ -2,7 +2,9 @@ import os
 import json
 from flask import Flask, render_template, abort
 
-app = Flask(__name__)
+app = Flask(__name__,
+           static_folder='static',  # carpeta static dentro de app
+           static_url_path='/static')  # URL pública
 
 # Función para cargar los datos del JSON de forma segura
 def cargar_datos():
