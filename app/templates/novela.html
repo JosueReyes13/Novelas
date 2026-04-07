@@ -11,25 +11,30 @@
 
 <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
     <div class="lista-pdf" style="background: #fff; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-        {% for vol in volumenes %}
+        
+        {# Cambiamos 'vol' por 'item' para que sea más claro que es un objeto con datos #}
+        {% for item in volumenes %}
         <div class="item-volumen" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
             <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #333;">
-                <i class="fa fa-file-pdf-o" style="color: #f38181; margin-right: 10px;"></i> {{ vol }}
+                <i class="fa fa-file-pdf-o" style="color: #f38181; margin-right: 10px;"></i> 
+                {# Mostramos el nombre del volumen guardado en 'vol' #}
+                {{ item.vol }}
             </span>
             
-            <a href="{{ url_for('static', filename='novelas/' + nombre + '/' + vol) }}" 
+            {# Cambiamos el link para que apunte a Google Drive usando el 'id' #}
+            <a href="https://drive.google.com/uc?export=view&id={{ item.id }}" 
                target="_blank" 
-               style="background: #f38181; color: #fff; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 700;">
+               style="background: #f38181; color: #fff; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 700; text-decoration: none;">
                 LEER AHORA
             </a>
         </div>
         {% else %}
-        <p style="padding: 20px; text-align: center;">No se encontraron archivos PDF en esta carpeta.</p>
+        <p style="padding: 20px; text-align: center;">No se encontraron volúmenes registrados para esta novela.</p>
         {% endfor %}
     </div>
     
     <div style="text-align: center; margin-top: 30px;">
-        <a href="{{ url_for('index') }}" style="color: #999; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">
+        <a href="{{ url_for('index') }}" style="color: #999; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; text-decoration: none;">
             <i class="fa fa-arrow-left"></i> Volver a la biblioteca
         </a>
     </div>

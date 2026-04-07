@@ -1,42 +1,41 @@
 import os
+import json
 from flask import Flask, render_template, abort
 
-# Al estar app.py dentro de la carpeta /app, Flask detecta automáticamente
-# las carpetas templates/ y static/ si están en el mismo nivel.
 app = Flask(__name__)
 
-# Función para obtener la ruta de las novelas de forma dinámica
-def get_novelas_path():
-    # os.path.dirname(__file__) nos da la ruta de la carpeta 'app'
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    return os.path.join(base_dir, 'static', 'novelas')
+# Función para cargar los datos del JSON de forma segura
+def cargar_datos():
+    # Buscamos el archivo novelas.json en la misma carpeta que este app.py
+    ruta_json = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'novelas.json')
+    
+    try:
+        with open(ruta_json, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {} # Retorna un diccionario vacío si el archivo no existe
 
 @app.route("/")
 def index():
-    path = get_novelas_path()
-    lista_novelas = []
+    data = cargar_datos()
+    # Obtenemos las llaves (nombres de novelas) y las ordenamos alfabéticamente
+    lista_novelas = sorted(list(data.keys()))
     
-    # Verificamos si existe la carpeta para evitar errores en el despliegue
-    if os.path.exists(path):
-        lista_novelas = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
-        lista_novelas.sort() # Siempre es bueno ordenar la lista principal
-        
     return render_template("index.html", novelas=lista_novelas)
 
 @app.route("/novela/<nombre>")
 def ver_novela(nombre):
-    path = get_novelas_path()
-    novela_dir = os.path.join(path, nombre)
+    data = cargar_datos()
     
-    if not os.path.exists(novela_dir):
+    # Verificamos si la novela existe en nuestro JSON
+    if nombre not in data:
         abort(404)
     
-    # Filtramos solo archivos PDF
-    volumenes = [f for f in os.listdir(novela_dir) if f.lower().endswith('.pdf')]
-    volumenes.sort()
+    # Obtenemos la lista de volúmenes asociada a esa novela
+    volumenes = data[nombre]
     
+    # Ya no necesitamos ordenar aquí porque el JSON ya tiene el orden que tú le diste
     return render_template("novela.html", nombre=nombre, volumenes=volumenes)
 
-# Esto es para que puedas seguir probando localmente con python app/app.py
 if __name__ == "__main__":
     app.run(debug=True)
