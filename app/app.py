@@ -1,5 +1,6 @@
 import os
 import json
+import urllib.parse
 from flask import Flask, render_template, abort
 
 app = Flask(__name__,
@@ -15,29 +16,33 @@ def cargar_datos():
         with open(ruta_json, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        return {} # Retorna un diccionario vacío si el archivo no existe
+        return {}
 
 @app.route("/")
 def index():
     data = cargar_datos()
-    # Obtenemos las llaves (nombres de novelas) y las ordenamos alfabéticamente
+    # Obtenemos las llaves y ordenamos
     lista_novelas = sorted(list(data.keys()))
-    
     return render_template("index.html", novelas=lista_novelas)
 
-@app.route("/novela/<nombre>")
+# CAMBIO CLAVE: Usamos <path:nombre> para aceptar comas, espacios y puntos
+@app.route("/novela/<path:nombre>")
 def ver_novela(nombre):
     data = cargar_datos()
     
+    # Decodificamos el nombre por si el navegador lo envió con códigos como %20 o %2C
+    nombre_decodificado = urllib.parse.unquote(nombre)
+    
     # Verificamos si la novela existe en nuestro JSON
-    if nombre not in data:
-        abort(404)
+    if nombre_decodificado not in data:
+        # Si no lo encuentra directo, intentamos buscarlo tal cual viene (por si acaso)
+        if nombre not in data:
+            abort(404)
+        else:
+            nombre_decodificado = nombre
     
-    # Obtenemos la lista de volúmenes asociada a esa novela
-    volumenes = data[nombre]
-    
-    # Ya no necesitamos ordenar aquí porque el JSON ya tiene el orden que tú le diste
-    return render_template("novela.html", nombre=nombre, volumenes=volumenes)
+    volumenes = data[nombre_decodificado]
+    return render_template("novela.html", nombre=nombre_decodificado, volumenes=volumenes)
 
 if __name__ == "__main__":
     app.run(debug=True)
