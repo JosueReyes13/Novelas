@@ -74,5 +74,24 @@
         { "vol": "Volumen 11", "id": "1GWoZUElX2Xv8gLjKFReS0q_8aD2PmFBA" },
         { "vol": "Volumen 11.5", "id": "1YIDia-I-3g4s_H6CO-nGBCf1fTSzWKWd" },
         { "vol": "Volumen 12", "id": "1RocNJRJGAMci8Ekii9A40rLaSOs0OsaR" }
+    ],
+    "Isekai Nonbiri Nouka": [
+        { "vol": "Volumen 1", "id": "1quShiTMJSA8Grg-COaY6qprKuFuaB-qL" },
+        { "vol": "Volumen 2", "id": "1HvjIiXfurbvEfZ5VrcyOFTk3mCtJzbiu" },
+        { "vol": "Volumen 3", "id": "1CZPv2HqUAsfFEezweXSYEMg6Cil_Ba7o" },
+        { "vol": "Volumen 4", "id": "1fC98pY1eNn1E48cFeJlcoI-5Xo3366g3" },
+        { "vol": "Volumen 5", "id": "1yM0ZsKAv2qDLUS8N7tU2YGfgOaoeEa49" },
+        { "vol": "Volumen 6", "id": "1jOYIV8esEprsMcpEpvUBJpulAc3s2ASW" },
+        { "vol": "Volumen 7", "id": "18pq1_UWqsNViohQRLUUCDlNb1FccAXjH" },
+        { "vol": "Volumen 8", "id": "1TXimSne4dY2gdMn-MhkmQj7-1GB48Yog" },
+        { "vol": "Volumen 9", "id": "16Cf6RJrLTHxJatu_4VRWpCFYISYDGgAu" },
+        { "vol": "Volumen 10", "id": "15RzDK8OZLqbXQj4CJ_F605mk6P5x3VLh" },
+        { "vol": "Volumen 11", "id": "1D8rsZlqm11WGRZXFDgF3qHII1qUdCY3u" },
+        { "vol": "Volumen 12", "id": "1_bK3BPZas2aV0s3ErsWxuzGFtBItAJxK" },
+        { "vol": "Volumen 13", "id": "1iDtF3KkUYTC5FBIxzl1BVPLwSe0_t9YE" },
+        { "vol": "Volumen 14", "id": "1wbGjJgO01ZGN68vtIvn3Cy5uFTKRQ95G" },
+        { "vol": "Volumen 15", "id": "1ZNVTzhO9g9-O_fzFveygka5faPB4t-Br" },
+        { "vol": "Volumen 16", "id": "1fQwTPaLCg7zfC-5GaMQqSQkbSby5k0RL" },
+        { "vol": "Volumen 17", "id": "1HLwvrotCifTh9cUMxr_QAVS4XcYcFR9x" }
     ]
 }
