@@ -19,8 +19,16 @@
             <nav>
                 <ul class="main-menu">
                     <li><a href="{{ url_for('index') }}">Inicio</a></li>
-                    <li><a href="#section-2">Biblioteca</a></li>
-                    <li><a href="#"><span class="fa fa-search"></span></a></li>
+                    <li><a href="#content">Biblioteca</a></li>
+                    <li class="search-container">
+                        <a href="#" id="search-toggle">
+                            <span class="fa fa-search"></span>
+                        </a>
+                        <div class="search-form" id="search-form">
+                            <input type="text" id="search-input" placeholder="Buscar novela..." autocomplete="off">
+                            <div class="search-results" id="search-results"></div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -52,8 +60,8 @@
 
             <nav>
                 <div class="controls">
-                    <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> Home</label>
-                    <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> Trending</label>
+                    <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> Bienvenidos</label>
+                    <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> Disfruten</label>
                 </div>
             </nav>
         </div>
@@ -65,5 +73,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/buscar.js') }}"></script>
 </body>
 </html>

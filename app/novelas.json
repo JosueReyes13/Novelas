@@ -1,100 +1,142 @@
 {
-    "Alya-san, Quien Se Sienta A Mi Lado, A Veces Susurra Cosas Dulces En Ruso": [
-        { "vol": "Volumen 1", "id": "1MLJYNz8Z977766knqSMJ_kiVv0omKxQV" },
-        { "vol": "Volumen 2", "id": "1Jykh6ZIvOIOT1E28Upv8E0ZIOl85jxyo" },
-        { "vol": "Volumen 3", "id": "1lzQWI0LAKhfddONrpcMV00c9tI4PiE5H" },
-        { "vol": "Volumen 4", "id": "12UtC3SO-7W5uwLU42PrRsFVHTnIor1Qd" },
-        { "vol": "Volumen 4.5", "id": "1evG2OhVifp10zLHFuN15TbUXvIZpKfsq" },
-        { "vol": "Volumen 5", "id": "1tIaeTLxaQhVjYnMXjcC2FKOdWM_yuGUT" },
-        { "vol": "Volumen 6", "id": "19XdQ_7Z_cUJRXANv0jzKd0K4aiu732wa" }
-    ],
-    "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka (Danmachi)": [
-        { "vol": "Volumen 1", "id": "1D1hS-TjD7jEXA8zMMm9PXNdpxt4QCZkR" },
-        { "vol": "Volumen 2", "id": "1KaskSyly3t8mGSmXZOc0waqR8a-Qhape" },
-        { "vol": "Volumen 3", "id": "1KaP9EtrxaxPL14TATiUryAhGeyKaF7VS" },
-        { "vol": "Volumen 4", "id": "1ShNxYWCPFwn0OxSw7FKEfxVPXhRHb_zA" },
-        { "vol": "Volumen 5", "id": "1YXgbqiVVe8e01Y1Vy9385hqrrEaKUj-8" },
-        { "vol": "Volumen 6", "id": "1LskKvHhsPOJ6YXfKcrWP0ie1ribLH3iM" },
-        { "vol": "Volumen 7", "id": "1zuQaEaLd61POuMAvRPFT3iRfQVwRP1RR" },
-        { "vol": "Volumen 8", "id": "1AnTlLr4YmTWjcGbks5MIIisiP6_teKzA" },
-        { "vol": "Volumen 9", "id": "1tY-AlIkVRZRD5GF6FX7r2viQ-u0KqmLw" },
-        { "vol": "Volumen 10", "id": "15C246maHKCkoPymEF5ks7NxNgngGg05R" },
-        { "vol": "Volumen 11", "id": "1S2RCMsXM0St1aTfgu0NCd97tbno9OVxS" },
-        { "vol": "Volumen 12", "id": "1yufyD4bdUOyvr7Z4C2xWzVFVZOGzkcW2" },
-        { "vol": "Volumen 13", "id": "1-PQJVrL2Nr_6UdKgJwQBqQF19c0DdkZM" },
-        { "vol": "Volumen 14", "id": "1LccNRz97Tu7CmH__73X7U1yQczTG2F3c" },
-        { "vol": "Volumen 15", "id": "1y_AjZOTj-2wMa097k96oVNbz9VqTGewv" },
-        { "vol": "Volumen 16", "id": "1fLfVqK1ZiB6u5ag14LOks7h3pG5HzHxJ" },
-        { "vol": "Volumen 17", "id": "17_3IhiLheayOaHQSAL2f2xG1iLl17QIf" },
-        { "vol": "Volumen 18", "id": "13692IBIjfefDbF_Y4bpSHUTqCn6fQ_vA" },
-        { "vol": "Volumen 19", "id": "1Xg2Ikc-RN8zGenC4kppXSYcKLsa2l2NK" }
-    ],
-    "Jinsei Gyakuten Uwaki sare": [
-        { "vol": "Volumen 1", "id": "1Qdr300NLnNNqbzyL9ytO99QpfmEtkAp0" }
-    ],
-
-    "Koukou Jidai ni Gouman datta Joou-sama Tono Dousei Seikatsu wa Igaito Igokochi ga Warukunai": [
-        { "vol": "Volumen 1", "id": "1n3bXP286GkaarXl6wfgfya1fI1vBQDSR" },
-        { "vol": "Volumen 2", "id": "1TL29nm16IzShGKlmaiZsx3XNiaFuOy9M" },
-        { "vol": "Volumen 3", "id": "1J2Y924LxCIgYPlGlTkxnX3Q7AHBKvark" }
-    ],
-    "Mis maestras son mis ex novias": [
-        { "vol": "Volumen 1", "id": "1_14dPN4hqWxQ3Kurnr3srrBz-cfYBYIJ" },
-        { "vol": "Volumen 2", "id": "1BLgKgHxXp6TB3PD9f4JKcZjZ-5D-aq0H" },
-        { "vol": "Volumen 3", "id": "18jW0p2HzsKNf3amPi_A9YMRtKKwlke-c" }
-    ],
-    "Qué pasaria si decido ayudar a dos hermanas que odian a los hombres": [
-        { "vol": "Volumen 1", "id": "1aXi9Nzgnp0jVzVc97_x9MKSB-0D0i-Xf" },
-        { "vol": "Volumen 2", "id": "1tikI10uFOpUqKv7HMKj3YnT_FJm8f487" },
-        { "vol": "Volumen 3", "id": "1vcKi03as0DbTm6Gm29NnS4TWW3N25Qeg" },
-        { "vol": "Volumen 4", "id": "131YztnaOYbYCao23XS0EBNC0syVJClfE" },
-        { "vol": "Volumen 5", "id": "1zKFeGleePitugTGX_BlLAMHVQD3oh5Bc" },
-        { "vol": "Volumen 6", "id": "1CAklT-82_TOk9Nst2V-jpWdwNl9s1mk6" },
-        { "vol": "Volumen 7", "id": "1KBzWpNBOcXH67d7-sFrbl3m9tsKjk08y" }
-    ],
-    "Shigoto Kaeri": [{ "vol": "Volumen 1", "id": "1QosH4xQoZSka1h55RpeYY_3dAr_gD-su" }],
-    "Yumemiru Danshi wa Genjitsushugisha": [
-        { "vol": "Volumen 1", "id": "12RCUXOzS_Acpa9mfPAwrUyzjmh-n4vAA" },
-        { "vol": "Volumen 2", "id": "13r_YPgpzvwCR5PG5L-6m2173Mg7ZXUOz" },
-        { "vol": "Volumen 3", "id": "1tZW5fqd-CcJvVyNBQPhNsn3l_ljdVC5F" },
-        { "vol": "Volumen 4", "id": "13z5zMvm0Rc3OjIEIAnDUkBJvxxZ8C3JO" },
-        { "vol": "Volumen 5", "id": "1vS35oHk74UrITvcqTXWs3p5bsd4dm2d1" },
-        { "vol": "Volumen 6", "id": "1oB0O9wZ3G28FzCEzG4qFBI7EKUzsWUs1" },
-        { "vol": "Volumen 7", "id": "1yUhHOstf8ffVI5qYeLwOzzbd04X7fl9v" },
-        { "vol": "Volumen 8", "id": "1f74FxuHEYevQqrWga0eK2uGHXOm9dtFC" }
-    ],
-    "Failure Frame": [
-        { "vol": "Volumen 1", "id": "1bsQWFyCR00rSNlbXSYWqD-BlpCJj0K3w" },
-        { "vol": "Volumen 2", "id": "1W0oDuMJYf11uwmfNfY1jPeIe_Yuc-boy" },
-        { "vol": "Volumen 3", "id": "14AslVz0tTEldftBJY2Bq71EUTk-jkLEM" },
-        { "vol": "Volumen 4", "id": "1Zumdm-hKSZ8AIVWzkzEwUj_399GWrA9G" },
-        { "vol": "Volumen 5", "id": "1bGQRMmG-wvp15DtvLJSAnEtSaymfcARO" },
-        { "vol": "Volumen 6", "id": "11ntJ4B6adlLK15DT5UIiZDbDHlB5SKOI" },
-        { "vol": "Volumen 7", "id": "10GP_0p0ZtcL8FHWUT5m9_KySb6KLsTuD" },
-        { "vol": "Volumen 8", "id": "1BaLjHIlaAt_dBDRuldNlVOesUpOYCPvd" },
-        { "vol": "Volumen 9", "id": "1chRqVbbCzcySlBknkwD_KDf4NDU1XeHi" },
-        { "vol": "Volumen 10", "id": "1z36Li3OBaPCHqNnF6kLmrQUosPAxNXo8" },
-        { "vol": "Volumen 11", "id": "1GWoZUElX2Xv8gLjKFReS0q_8aD2PmFBA" },
-        { "vol": "Volumen 11.5", "id": "1YIDia-I-3g4s_H6CO-nGBCf1fTSzWKWd" },
-        { "vol": "Volumen 12", "id": "1RocNJRJGAMci8Ekii9A40rLaSOs0OsaR" }
-    ],
-    "Isekai Nonbiri Nouka": [
-        { "vol": "Volumen 1", "id": "1quShiTMJSA8Grg-COaY6qprKuFuaB-qL" },
-        { "vol": "Volumen 2", "id": "1HvjIiXfurbvEfZ5VrcyOFTk3mCtJzbiu" },
-        { "vol": "Volumen 3", "id": "1CZPv2HqUAsfFEezweXSYEMg6Cil_Ba7o" },
-        { "vol": "Volumen 4", "id": "1fC98pY1eNn1E48cFeJlcoI-5Xo3366g3" },
-        { "vol": "Volumen 5", "id": "1yM0ZsKAv2qDLUS8N7tU2YGfgOaoeEa49" },
-        { "vol": "Volumen 6", "id": "1jOYIV8esEprsMcpEpvUBJpulAc3s2ASW" },
-        { "vol": "Volumen 7", "id": "18pq1_UWqsNViohQRLUUCDlNb1FccAXjH" },
-        { "vol": "Volumen 8", "id": "1TXimSne4dY2gdMn-MhkmQj7-1GB48Yog" },
-        { "vol": "Volumen 9", "id": "16Cf6RJrLTHxJatu_4VRWpCFYISYDGgAu" },
-        { "vol": "Volumen 10", "id": "15RzDK8OZLqbXQj4CJ_F605mk6P5x3VLh" },
-        { "vol": "Volumen 11", "id": "1D8rsZlqm11WGRZXFDgF3qHII1qUdCY3u" },
-        { "vol": "Volumen 12", "id": "1_bK3BPZas2aV0s3ErsWxuzGFtBItAJxK" },
-        { "vol": "Volumen 13", "id": "1iDtF3KkUYTC5FBIxzl1BVPLwSe0_t9YE" },
-        { "vol": "Volumen 14", "id": "1wbGjJgO01ZGN68vtIvn3Cy5uFTKRQ95G" },
-        { "vol": "Volumen 15", "id": "1ZNVTzhO9g9-O_fzFveygka5faPB4t-Br" },
-        { "vol": "Volumen 16", "id": "1fQwTPaLCg7zfC-5GaMQqSQkbSby5k0RL" },
-        { "vol": "Volumen 17", "id": "1HLwvrotCifTh9cUMxr_QAVS4XcYcFR9x" }
+  "Alya-san, Quien Se Sienta A Mi Lado, A Veces Susurra Cosas Dulces En Ruso": {
+    "sinopsis": "Alisa Mikhailovna Kujo, que asiste a una escuela privada, Seirei Gakuen, es una chica de secundaria con cabello plateado que se ve tan hermosa que cualquiera puede darse la vuelta si ella camina. El personaje principal, Masachika Kuze, que se sienta junto a Alisa, es un estudiante desmotivado que solo duerme en la escuela y siempre se queja. Por alguna razón, Alisa a veces habla ruso. Sin embargo, Alisa no sabía que Masachika también podía entender el ruso en su nivel nativo.",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1MLJYNz8Z977766knqSMJ_kiVv0omKxQV" },
+      { "vol": "Volumen 2", "id": "1Jykh6ZIvOIOT1E28Upv8E0ZIOl85jxyo" },
+      { "vol": "Volumen 3", "id": "1lzQWI0LAKhfddONrpcMV00c9tI4PiE5H" },
+      { "vol": "Volumen 4", "id": "12UtC3SO-7W5uwLU42PrRsFVHTnIor1Qd" },
+      { "vol": "Volumen 4.5", "id": "1evG2OhVifp10zLHFuN15TbUXvIZpKfsq" },
+      { "vol": "Volumen 5", "id": "1tIaeTLxaQhVjYnMXjcC2FKOdWM_yuGUT" },
+      { "vol": "Volumen 6", "id": "19XdQ_7Z_cUJRXANv0jzKd0K4aiu732wa" },
+        { "vol": "Volumen 7", "id": "1JgN_kQXYYOqes2ohZzee5wYpLU9NBmA-" },
+        { "vol": "Volumen 8", "id": "1efqu0cnNXIsWnskBpYec733boBAl8-ss" },
+        { "vol": "Volumen 9", "id": "1QZm0x3x3SnBXkl_0NlL4pinmurcF7Qsc" },
+        { "vol": "Volumen 9.5", "id": "1BlW0OQy5DffHDG4cQSaaFB6k8HG0euUl" },
+        { "vol": "Volumen 10", "id": "1bxYgMTr0tAn9knV-o79XBmVi1Yo0YpQL" },
+        { "vol": "Volumen 11", "id": "1RiPIFh2m_Wj_li0CpstoSBRyh7F342sL" }
     ]
+  },
+  "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka (Danmachi)": {
+    "sinopsis": "Bell Cranel es un aventurero novato que sueña con convertirse en héroe. Un día, conoce a Ais Wallenstein, una espadachina experta de la que se enamora perdidamente. Acompaña a Bell en su viaje para hacerse más fuerte y acercarse a la chica de sus sueños, mientras explora los peligrosos calabozos de la ciudad de Orario.",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1D1hS-TjD7jEXA8zMMm9PXNdpxt4QCZkR" },
+      { "vol": "Volumen 2", "id": "1KaskSyly3t8mGSmXZOc0waqR8a-Qhape" },
+      { "vol": "Volumen 3", "id": "1KaP9EtrxaxPL14TATiUryAhGeyKaF7VS" },
+      { "vol": "Volumen 4", "id": "1ShNxYWCPFwn0OxSw7FKEfxVPXhRHb_zA" },
+      { "vol": "Volumen 5", "id": "1YXgbqiVVe8e01Y1Vy9385hqrrEaKUj-8" },
+      { "vol": "Volumen 6", "id": "1LskKvHhsPOJ6YXfKcrWP0ie1ribLH3iM" },
+      { "vol": "Volumen 7", "id": "1zuQaEaLd61POuMAvRPFT3iRfQVwRP1RR" },
+      { "vol": "Volumen 8", "id": "1AnTlLr4YmTWjcGbks5MIIisiP6_teKzA" },
+      { "vol": "Volumen 9", "id": "1tY-AlIkVRZRD5GF6FX7r2viQ-u0KqmLw" },
+      { "vol": "Volumen 10", "id": "15C246maHKCkoPymEF5ks7NxNgngGg05R" },
+      { "vol": "Volumen 11", "id": "1S2RCMsXM0St1aTfgu0NCd97tbno9OVxS" },
+      { "vol": "Volumen 12", "id": "1yufyD4bdUOyvr7Z4C2xWzVFVZOGzkcW2" },
+      { "vol": "Volumen 13", "id": "1-PQJVrL2Nr_6UdKgJwQBqQF19c0DdkZM" },
+      { "vol": "Volumen 14", "id": "1LccNRz97Tu7CmH__73X7U1yQczTG2F3c" },
+      { "vol": "Volumen 15", "id": "1y_AjZOTj-2wMa097k96oVNbz9VqTGewv" },
+      { "vol": "Volumen 16", "id": "1fLfVqK1ZiB6u5ag14LOks7h3pG5HzHxJ" },
+      { "vol": "Volumen 17", "id": "17_3IhiLheayOaHQSAL2f2xG1iLl17QIf" },
+      { "vol": "Volumen 18", "id": "13692IBIjfefDbF_Y4bpSHUTqCn6fQ_vA" },
+      { "vol": "Volumen 19", "id": "1Xg2Ikc-RN8zGenC4kppXSYcKLsa2l2NK" }
+    ]
+  },
+  "Jinsei Gyakuten Uwaki sare": {
+    "sinopsis": " Eiji, tras ser engañado por su novia Miyuki y falsamente acusado de maltrato por un rival, sufre acoso escolar y social extremo. Al borde del suicidio, encuentra apoyo en Ai, la chica más popular, iniciando una redención para castigar a los culpables.",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1Qdr300NLnNNqbzyL9ytO99QpfmEtkAp0" },
+        { "vol": "Volumen 2", "id": "12iiDb666Yl_giTTEnBP_xcyZT7mdYjMX" },
+        { "vol": "Volumen 3", "id": "1gIaptoHoDe8mr_qCPCOaO-_iRkVxr8qQ" }
+    ]
+  },
+  "Koukou Jidai ni Gouman datta Joou-sama Tono Dousei Seikatsu wa Igaito Igokochi ga Warukunai": {
+    "sinopsis": "Una noche, mientras trabajaba en una tienda de conveniencia, el universitario Yamamoto se reencuentra con Megumi Hayashi, su compañera de secundaria y la chica más hermosa de la clase. A pesar de que Hayashi, conocida como la reina por su carácter arrogante y dominante, siempre le resultó difícil de tratar y mantenían una relación distante, Yamamoto descubre un moretón doloroso en su muñeca durante una conversación casual. Al enterarse de que fue golpeada por su pareja, Yamamoto decide darle refugio en su casa... ¿qué sucederá después?",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1n3bXP286GkaarXl6wfgfya1fI1vBQDSR" },
+      { "vol": "Volumen 2", "id": "1TL29nm16IzShGKlmaiZsx3XNiaFuOy9M" },
+      { "vol": "Volumen 3", "id": "1J2Y924LxCIgYPlGlTkxnX3Q7AHBKvark" },
+        { "vol": "Volumen 4", "id": "1mp30LYZ76Nq6spiyJSOgTGiU64e-B9Kw" }
+    ]
+  },
+  "Mis maestras son mis ex novias": {
+    "sinopsis": "Imagina que tus ex novias se convierten en tus maestras en la universidad. ¿Puede haber situación más incómoda y a la vez divertida? Una comedia romántica llena de situaciones embarazosas y sentimientos encontrados.",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1_14dPN4hqWxQ3Kurnr3srrBz-cfYBYIJ" },
+      { "vol": "Volumen 2", "id": "1BLgKgHxXp6TB3PD9f4JKcZjZ-5D-aq0H" },
+      { "vol": "Volumen 3", "id": "18jW0p2HzsKNf3amPi_A9YMRtKKwlke-c" }
+    ]
+  },
+  "Qué pasaria si decido ayudar a dos hermanas que odian a los hombres": {
+    "sinopsis": "Dos hermanas que han jurado odiar a todos los hombres por experiencias pasadas. Un chico que decide ayudarlas sin esperar nada a cambio. ¿Podrá romper las barreras que ellas mismas han construido? Una historia de superación y aprendizaje mutuo.",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1aXi9Nzgnp0jVzVc97_x9MKSB-0D0i-Xf" },
+      { "vol": "Volumen 2", "id": "1tikI10uFOpUqKv7HMKj3YnT_FJm8f487" },
+      { "vol": "Volumen 3", "id": "1vcKi03as0DbTm6Gm29NnS4TWW3N25Qeg" },
+      { "vol": "Volumen 4", "id": "131YztnaOYbYCao23XS0EBNC0syVJClfE" },
+      { "vol": "Volumen 5", "id": "1zKFeGleePitugTGX_BlLAMHVQD3oh5Bc" },
+      { "vol": "Volumen 6", "id": "1CAklT-82_TOk9Nst2V-jpWdwNl9s1mk6" },
+      { "vol": "Volumen 7", "id": "1KBzWpNBOcXH67d7-sFrbl3m9tsKjk08y" }
+    ]
+  },
+  "Shigoto Kaeri": {
+    "sinopsis": "Por favor... quiero que me abraces. Haruhiko Misawa, un joven empleado, es invitado a un hotel después de una fiesta por su estricta jefa, Yuko Momoo, a quien se teme como la emperatriz. Le pregunta a Misawa, quien está confundida y avergonzada. ¿Te importaría tener un bebé conmigo? Comienza una relación entre un hombre y una mujer sin amor, que no se puede contar a nadie. La cara que mi jefa sólo me muestra a mí. Reglas de las que no deberías enamorarte. Sin embargo, poco a poco nos fuimos atrayendo el uno por el otro. ¡Comienza una comedia romántica para adultos sobre una hermosa jefa y su subordinado!",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1QosH4xQoZSka1h55RpeYY_3dAr_gD-su" },
+        { "vol": "Volumen 2", "id": "1S4GZEaXibBn5zo1-TmzhGk2eAOtQsBcY" },
+        { "vol": "Volumen 3", "id": "1vl4ey068gyerQ2AXRPHYdWD0VSWwQt5r" }
+    ]
+  },
+  "Yumemiru Danshi wa Genjitsushugisha": {
+    "sinopsis": "sigue a Wataru Sajou, quien, tras ser rechazado por su inalcanzable compañera Aika Natsukawa, decide madurar y distanciarse al aceptar su realidad. Este cambio de actitud provoca que Aika, acostumbrada a su acoso, se confunda y empiece a desarrollar sentimientos por él, creando una comedia romántica de malentendidos mutuos. ",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "12RCUXOzS_Acpa9mfPAwrUyzjmh-n4vAA" },
+      { "vol": "Volumen 2", "id": "13r_YPgpzvwCR5PG5L-6m2173Mg7ZXUOz" },
+      { "vol": "Volumen 3", "id": "1tZW5fqd-CcJvVyNBQPhNsn3l_ljdVC5F" },
+      { "vol": "Volumen 4", "id": "13z5zMvm0Rc3OjIEIAnDUkBJvxxZ8C3JO" },
+      { "vol": "Volumen 5", "id": "1vS35oHk74UrITvcqTXWs3p5bsd4dm2d1" },
+      { "vol": "Volumen 6", "id": "1oB0O9wZ3G28FzCEzG4qFBI7EKUzsWUs1" },
+      { "vol": "Volumen 7", "id": "1yUhHOstf8ffVI5qYeLwOzzbd04X7fl9v" },
+      { "vol": "Volumen 8", "id": "1f74FxuHEYevQqrWga0eK2uGHXOm9dtFC" }
+    ]
+  },
+  "Failure Frame": {
+    "sinopsis": "Touka Mimori, un estudiante convocado a un mundo fantástico que es desterrado a una mazmorra mortal por tener el rango más bajo (rango E). Usando habilidades de estado alterado, sobrevive y busca venganza contra la diosa que lo traicionó, volviéndose extremadamente fuerte.",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1bsQWFyCR00rSNlbXSYWqD-BlpCJj0K3w" },
+      { "vol": "Volumen 2", "id": "1W0oDuMJYf11uwmfNfY1jPeIe_Yuc-boy" },
+      { "vol": "Volumen 3", "id": "14AslVz0tTEldftBJY2Bq71EUTk-jkLEM" },
+      { "vol": "Volumen 4", "id": "1Zumdm-hKSZ8AIVWzkzEwUj_399GWrA9G" },
+      { "vol": "Volumen 5", "id": "1bGQRMmG-wvp15DtvLJSAnEtSaymfcARO" },
+      { "vol": "Volumen 6", "id": "11ntJ4B6adlLK15DT5UIiZDbDHlB5SKOI" },
+      { "vol": "Volumen 7", "id": "10GP_0p0ZtcL8FHWUT5m9_KySb6KLsTuD" },
+      { "vol": "Volumen 8", "id": "1BaLjHIlaAt_dBDRuldNlVOesUpOYCPvd" },
+      { "vol": "Volumen 9", "id": "1chRqVbbCzcySlBknkwD_KDf4NDU1XeHi" },
+      { "vol": "Volumen 10", "id": "1z36Li3OBaPCHqNnF6kLmrQUosPAxNXo8" },
+      { "vol": "Volumen 11", "id": "1GWoZUElX2Xv8gLjKFReS0q_8aD2PmFBA" },
+      { "vol": "Volumen 11.5", "id": "1YIDia-I-3g4s_H6CO-nGBCf1fTSzWKWd" },
+      { "vol": "Volumen 12", "id": "1RocNJRJGAMci8Ekii9A40rLaSOs0OsaR" }
+    ]
+  },
+  "Isekai Nonbiri Nouka": {
+    "sinopsis": "Un hombre que muere por una enfermedad es reencarnado en otro mundo con la habilidad de tener una salud perfecta. Decide vivir tranquilamente como granjero, pero poco a poco va atrayendo a diferentes criaturas y personas que quieren unirse a su aldea. Una historia relajada de construcción de una comunidad en un mundo de fantasía.",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "1quShiTMJSA8Grg-COaY6qprKuFuaB-qL" },
+      { "vol": "Volumen 2", "id": "1HvjIiXfurbvEfZ5VrcyOFTk3mCtJzbiu" },
+      { "vol": "Volumen 3", "id": "1CZPv2HqUAsfFEezweXSYEMg6Cil_Ba7o" },
+      { "vol": "Volumen 4", "id": "1fC98pY1eNn1E48cFeJlcoI-5Xo3366g3" },
+      { "vol": "Volumen 5", "id": "1yM0ZsKAv2qDLUS8N7tU2YGfgOaoeEa49" },
+      { "vol": "Volumen 6", "id": "1jOYIV8esEprsMcpEpvUBJpulAc3s2ASW" },
+      { "vol": "Volumen 7", "id": "18pq1_UWqsNViohQRLUUCDlNb1FccAXjH" },
+      { "vol": "Volumen 8", "id": "1TXimSne4dY2gdMn-MhkmQj7-1GB48Yog" },
+      { "vol": "Volumen 9", "id": "16Cf6RJrLTHxJatu_4VRWpCFYISYDGgAu" },
+      { "vol": "Volumen 10", "id": "15RzDK8OZLqbXQj4CJ_F605mk6P5x3VLh" },
+      { "vol": "Volumen 11", "id": "1D8rsZlqm11WGRZXFDgF3qHII1qUdCY3u" },
+      { "vol": "Volumen 12", "id": "1_bK3BPZas2aV0s3ErsWxuzGFtBItAJxK" },
+      { "vol": "Volumen 13", "id": "1iDtF3KkUYTC5FBIxzl1BVPLwSe0_t9YE" },
+      { "vol": "Volumen 14", "id": "1wbGjJgO01ZGN68vtIvn3Cy5uFTKRQ95G" },
+      { "vol": "Volumen 15", "id": "1ZNVTzhO9g9-O_fzFveygka5faPB4t-Br" },
+      { "vol": "Volumen 16", "id": "1fQwTPaLCg7zfC-5GaMQqSQkbSby5k0RL" },
+      { "vol": "Volumen 17", "id": "1HLwvrotCifTh9cUMxr_QAVS4XcYcFR9x" }
+    ]
+  }
 }

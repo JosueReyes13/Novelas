@@ -295,3 +295,117 @@ a { text-decoration: none; }
         font-size: 1.5em;
     }
 }
+
+/* ============================================
+   ESTILOS DEL BUSCADOR
+   ============================================ */
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-form {
+    display: none;
+    position: absolute;
+    right: -10px;
+    top: 100%;
+    margin-top: 10px;
+    background-image: linear-gradient(rgba(243,129,129,0.85), rgba(252,227,138,0.85));
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 280px;
+}
+
+.search-form::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+}
+
+.search-form.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #f38181;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-form input:focus {
+    border-color: #e26868;
+}
+
+.search-results {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.search-result-item {
+    padding: 8px 10px;
+    border-bottom: 1px solid #484848;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-result-item:hover {
+    background: #f8f9fa;
+}
+
+.search-result-item a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 12px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.no-results {
+    padding: 10px;
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive para el buscador */
+@media (max-width: 768px) {
+    .search-form {
+        width: 260px;
+        right: -15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-form {
+        width: 240px;
+        right: -20px;
+    }
+}

@@ -10,18 +10,33 @@
 </section>
 
 <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+    
+    <!-- NUEVO: SECCIÓN DE SINOPSIS -->
+    <div class="sinopsis-container" style="background: #fff; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 25px; padding: 25px;">
+        <h3 style="color: #f38181; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">
+            <i class="fa fa-book" style="margin-right: 10px;"></i> Sinopsis
+        </h3>
+        <div class="sinopsis-contenido" style="line-height: 1.8; color: #555; text-align: justify;">
+            {% if sinopsis %}
+                <p>{{ sinopsis }}</p>
+            {% else %}
+                <p style="color: #999; font-style: italic;">Próximamente disponible la sinopsis de esta novela...</p>
+            {% endif %}
+        </div>
+    </div>
+    
     <div class="lista-pdf" style="background: #fff; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+        <h3 style="padding: 20px 20px 0 20px; color: #333; font-family: 'Montserrat', sans-serif; font-size: 18px;">
+            <i class="fa fa-files-o" style="color: #f38181; margin-right: 10px;"></i> Volúmenes disponibles
+        </h3>
         
-        {# Cambiamos 'vol' por 'item' para que sea más claro que es un objeto con datos #}
         {% for item in volumenes %}
         <div class="item-volumen" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
             <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #333;">
                 <i class="fa fa-file-pdf-o" style="color: #f38181; margin-right: 10px;"></i> 
-                {# Mostramos el nombre del volumen guardado en 'vol' #}
                 {{ item.vol }}
             </span>
             
-            {# Cambiamos el link para que apunte a Google Drive usando el 'id' #}
             <a href="https://drive.google.com/file/d/{{ item.id }}/preview"
                target="_blank" 
                style="background: #f38181; color: #fff; padding: 8px 20px; border-radius: 4px; font-size: 14px; font-weight: 700; text-decoration: none;">
@@ -39,4 +54,23 @@
         </a>
     </div>
 </div>
+
+<style>
+    .sinopsis-contenido p {
+        margin: 0;
+        font-size: 15px;
+    }
+    
+    @media (max-width: 768px) {
+        .sinopsis-contenido p {
+            font-size: 14px;
+        }
+        
+        .item-volumen {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+    }
+</style>
 {% endblock %}

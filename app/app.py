@@ -1,11 +1,11 @@
 import os
 import json
 import urllib.parse
-from flask import Flask, render_template, abort
+from flask import Flask, render_template, abort, jsonify
 
 app = Flask(__name__,
-           static_folder='static',  # carpeta static dentro de app
-           static_url_path='/static')  # URL pública
+           static_folder='static',
+           static_url_path='/static')
 
 # Función para cargar los datos del JSON de forma segura
 def cargar_datos():
@@ -21,11 +21,11 @@ def cargar_datos():
 @app.route("/")
 def index():
     data = cargar_datos()
-    # Obtenemos las llaves y ordenamos
+    # Obtenemos las llaves (títulos de las novelas) y ordenamos
     lista_novelas = sorted(list(data.keys()))
     return render_template("index.html", novelas=lista_novelas)
 
-# CAMBIO CLAVE: Usamos <path:nombre> para aceptar comas, espacios y puntos
+# Usamos <path:nombre> para aceptar comas, espacios y puntos
 @app.route("/novela/<path:nombre>")
 def ver_novela(nombre):
     data = cargar_datos()
@@ -41,8 +41,24 @@ def ver_novela(nombre):
         else:
             nombre_decodificado = nombre
     
-    volumenes = data[nombre_decodificado]
-    return render_template("novela.html", nombre=nombre_decodificado, volumenes=volumenes)
+    # Obtenemos los datos de la novela (sinopsis y volumenes)
+    novela_data = data[nombre_decodificado]
+    sinopsis = novela_data.get('sinopsis', 'Sinopsis no disponible próximamente...')
+    volumenes = novela_data.get('volumenes', [])
+    
+    # Pasamos todos los datos al template
+    return render_template("novela.html", 
+                         nombre=nombre_decodificado, 
+                         volumenes=volumenes,
+                         sinopsis=sinopsis)
+
+# NUEVO ENDPOINT PARA EL BUSCADOR
+@app.route('/api/novelas')
+def api_novelas():
+    """Endpoint para obtener la lista de títulos de novelas (para el buscador)"""
+    data = cargar_datos()
+    lista_novelas = sorted(list(data.keys()))
+    return jsonify(lista_novelas)  # Usamos jsonify en lugar de json.dumps
 
 if __name__ == "__main__":
     app.run(debug=True)
