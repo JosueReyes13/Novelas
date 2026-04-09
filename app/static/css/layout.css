@@ -409,3 +409,35 @@ a { text-decoration: none; }
         right: -20px;
     }
 }
+
+/* Estilos para el modo compacto (cuando está en páginas de novela) */
+        body.compact-mode #section-1 {
+            display: none !important;
+        }
+        
+        body.compact-mode .main-header {
+            position: relative;
+            background-image: linear-gradient(rgba(243,129,129,0.85), rgba(252,227,138,0.85));
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        body.compact-mode .main-logo {
+            font-size: 20px;
+        }
+        
+        body.compact-mode .main-menu li a {
+            font-size: 13px;
+        }
+        
+        body.compact-mode #content {
+            padding-top: 20px;
+        }
+        
+        /* Transición suave */
+        body {
+            transition: all 0.3s ease;
+        }
+        
+        #section-1 {
+            transition: all 0.3s ease;
+        }

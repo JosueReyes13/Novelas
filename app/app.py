@@ -7,9 +7,9 @@ app = Flask(__name__,
            static_folder='static',
            static_url_path='/static')
 
-# Función para cargar los datos del JSON de forma segura
+# Función para cargar los datos del JSON 
 def cargar_datos():
-    # Buscamos el archivo novelas.json en la misma carpeta que este app.py
+    # Buscamos el archivo novelas.json 
     ruta_json = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'novelas.json')
     
     try:

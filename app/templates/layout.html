@@ -10,9 +10,9 @@
     
     <link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
 </head>
-<body>
-
+<body class="{% block body_class %}{% endblock %}">
     <header class="main-header">
         <div class="header-wrapper">
             <div class="main-logo">NOVELS</div>
