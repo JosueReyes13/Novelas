@@ -13,51 +13,87 @@
 
 <div class="container" style="max-width: 800px; margin: 0 auto; padding: 15px;">
     
-    <!-- SECCIÓN DE SINOPSIS -->
-    <div class="sinopsis-container" style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px; padding: 15px 20px;">
-        <h3 style="color: #f38181; margin-bottom: 8px; font-family: 'Montserrat', sans-serif; font-size: 16px;">
-            <i class="fa fa-book" style="margin-right: 8px;"></i> Sinopsis
-        </h3>
-        <div class="sinopsis-contenido" style="line-height: 1.5; color: #555; text-align: justify; font-size: 14px;">
-            {% if sinopsis %}
-                <p style="margin: 0;">{{ sinopsis }}</p>
-            {% else %}
-                <p style="color: #999; font-style: italic; margin: 0;">Próximamente disponible la sinopsis de esta novela...</p>
-            {% endif %}
+    <!-- PORTADA - SOLO LA FOTO, SIN CONTENEDOR EXTRA -->
+    <div class="portada-container" style="margin-top: 0; margin-bottom: 25px; text-align: center;">
+        <img src="{{ url_for('static', filename='novelas/' + nombre + '/portada.jpg') }}" 
+             alt="Portada de {{ nombre }}" 
+             class="portada-img"
+             style="width: auto; max-width: 100%; height: auto; max-height: 350px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; margin: 0 auto;"
+             onerror="this.onerror=null; this.src='https://placehold.co/300x450/f8f9fa/f38181?text=📚+Portada+no+disponible';">
+    </div>
+    
+    <!-- SINOPSIS (contenedor independiente) -->
+    <div class="sinopsis-container" style="background: #fff; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 25px; overflow: hidden;">
+        <div style="padding: 20px 25px; background: white;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; border-left: 4px solid #f38181; padding-left: 15px;">
+                <i class="fa fa-book-open" style="color: #f38181; font-size: 20px;"></i>
+                <h3 style="color: #333; margin: 0; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 600;">Sinopsis</h3>
+            </div>
+            <div class="sinopsis-contenido" style="line-height: 1.6; color: #555; text-align: justify; font-size: 14px;">
+                {% if sinopsis %}
+                    <p style="margin: 0;">{{ sinopsis }}</p>
+                {% else %}
+                    <p style="color: #999; font-style: italic; margin: 0;">Próximamente disponible la sinopsis de esta novela...</p>
+                {% endif %}
+            </div>
         </div>
     </div>
     
-    <div class="lista-pdf" style="background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-        <h3 style="padding: 15px 20px 0 20px; color: #333; font-family: 'Montserrat', sans-serif; font-size: 16px; margin-bottom: 0;">
-            <i class="fa fa-files-o" style="color: #f38181; margin-right: 8px;"></i> Volúmenes disponibles
-        </h3>
+    <!-- LISTA DE VOLÚMENES (contenedor independiente) -->
+    <div class="lista-pdf" style="background: #fff; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden;">
+        <div style="background: linear-gradient(135deg, #f38181 0%, #f7b3b3 100%); padding: 15px 20px;">
+            <h3 style="margin: 0; color: white; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600;">
+                <i class="fa fa-files-o" style="margin-right: 10px;"></i> Volúmenes disponibles
+            </h3>
+        </div>
         
-        {% for item in volumenes %}
-        <div class="item-volumen" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid #eee;">
-            <span style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #333; font-size: 14px;">
-                <i class="fa fa-file-pdf-o" style="color: #f38181; margin-right: 8px;"></i> 
-                {{ item.vol }}
-            </span>
-            
-            <a href="https://drive.google.com/file/d/{{ item.id }}/preview"
-               target="_blank" 
-               style="background: #f38181; color: #fff; padding: 5px 15px; border-radius: 4px; font-size: 12px; font-weight: 700; text-decoration: none;">
-                LEER AHORA
-            </a>
+        <div style="padding: 5px 0;">
+            {% for item in volumenes %}
+            <div class="item-volumen" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; border-bottom: 1px solid #f0f0f0; transition: all 0.3s ease;">
+                <span style="font-family: 'Montserrat', sans-serif; font-weight: 500; color: #333; font-size: 14px;">
+                    <i class="fa fa-file-pdf-o" style="color: #f38181; margin-right: 12px; font-size: 18px;"></i> 
+                    {{ item.vol }}
+                </span>
+                
+                <a href="https://drive.google.com/file/d/{{ item.id }}/preview"
+                   target="_blank" 
+                   style="background: #f38181; color: white; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; display: inline-block;"
+                   onmouseover="this.style.background='#e06b6b'; this.style.transform='scale(1.05)';"
+                   onmouseout="this.style.background='#f38181'; this.style.transform='scale(1)';">
+                    <i class="fa fa-eye" style="margin-right: 5px;"></i> LEER AHORA
+                </a>
+            </div>
+            {% else %}
+            <p style="padding: 30px; text-align: center; color: #999;">No se encontraron volúmenes registrados para esta novela.</p>
+            {% endfor %}
         </div>
-        {% else %}
-        <p style="padding: 20px; text-align: center;">No se encontraron volúmenes registrados para esta novela.</p>
-        {% endfor %}
     </div>
     
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="{{ url_for('index') }}" style="color: #999; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; text-decoration: none;">
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="{{ url_for('index') }}" style="color: #999; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; text-decoration: none; transition: color 0.3s ease;"
+           onmouseover="this.style.color='#f38181';"
+           onmouseout="this.style.color='#999';">
             <i class="fa fa-arrow-left"></i> Volver a la biblioteca
         </a>
     </div>
 </div>
 
 <style>
+    /* Animaciones y mejoras */
+    .item-volumen:hover {
+        background-color: #fef5f5;
+        transform: translateX(5px);
+    }
+    
+    .portada-img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .portada-img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    
     .sinopsis-contenido p {
         margin: 0;
         font-size: 14px;
@@ -70,12 +106,21 @@
         
         .item-volumen {
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
             text-align: center;
         }
         
         .item-volumen span {
             font-size: 13px;
+        }
+        
+        .portada-img {
+            max-height: 250px !important;
+        }
+        
+        .sinopsis-container div,
+        .lista-pdf div {
+            padding: 15px 18px !important;
         }
     }
 </style>

@@ -1,0 +1,278 @@
+/* =================================================
+   1. BOTÓN ESTILO APPLE (iOS SWITCH)
+   ================================================= */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 46px;
+}
+
+.theme-switch input { display: none; }
+
+.slider.round {
+    background-color: #e4e4e7;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    background-color: #fff;
+    bottom: 3px;
+    content: "";
+    height: 18px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Color activo: Verde Apple */
+input:checked + .slider { 
+    background-color: #000000 !important; 
+} 
+
+input:checked + .slider:before { 
+    transform: translateX(20px); 
+}
+
+/* Iconos Sol/Luna */
+.sun-icon, .moon-icon {
+    position: absolute;
+    top: 5px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+.sun-icon { left: 7px; color: #f59e0b; }
+.moon-icon { right: 7px; color: #6366f1; opacity: 0; }
+
+input:checked + .slider .sun-icon { opacity: 0; }
+input:checked + .slider .moon-icon { opacity: 1; }
+
+
+/* =================================================
+   2. MODO OSCURO REFORZADO (BANNER Y HEADER)
+   ================================================= */
+
+/* Forzar que el Banner cambie de naranja a oscuro */
+body.dark-mode .banner-inner-wrapper {
+    /* Esto mata el degradado naranja/amarillo */
+    background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)) !important;
+}
+
+body.dark-mode #section-1,
+body.dark-mode .banner {
+    background-color: #121212 !important;
+    background-image: none !important;
+    border-radius: 0 !important;
+}
+
+/* =================================================
+   3. ESTILOS DE CUERPO Y CONTENIDO
+   ================================================= */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e5e7eb !important;
+}
+
+body.dark-mode main, 
+body.dark-mode #content {
+    background-color: #121212 !important;
+}
+
+/* Tarjetas, Buscador y Sinopsis */
+body.dark-mode .novel-card, 
+body.dark-mode .sinopsis-container, 
+body.dark-mode .lista-pdf,
+body.dark-mode .sinopsis-container > div,
+body.dark-mode .search-form {
+    background-color: #1e1e1e !important;
+    color: #e5e7eb !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+    border: 1px solid #333 !important;
+}
+
+/* Tipografía */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+body.dark-mode h4, body.dark-mode .main-logo,
+body.dark-mode .item-volumen span {
+    color: #ffffff !important;
+}
+
+body.dark-mode p, body.dark-mode .sinopsis-contenido {
+    color: #9ca3af !important;
+}
+
+/* Lista de volúmenes */
+body.dark-mode .item-volumen {
+    border-bottom: 1px solid #333 !important;
+}
+
+body.dark-mode .item-volumen:hover {
+    background-color: #2a2a2a !important;
+}
+
+/* Menú y buscador */
+body.dark-mode .main-menu li a {
+    color: #ffffff !important;
+}
+
+body.dark-mode .search-form input {
+    background-color: #121212 !important;
+    color: #fff !important;
+    border: 1px solid #444 !important;
+}
+
+/* Transiciones suaves */
+body, .main-header, .novel-card, .banner {
+    transition: background 0.3s ease, color 0.3s ease !important;
+}
+
+/* =================================================
+   4. TARJETAS, CONTENEDORES Y LISTAS
+   ================================================= */
+body.dark-mode .novel-card, 
+body.dark-mode .sinopsis-container, 
+body.dark-mode .lista-pdf,
+body.dark-mode .sinopsis-container > div,
+body.dark-mode .search-form {
+    background-color: #1e1e1e !important;
+    color: #e5e7eb !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+    border: 1px solid #333 !important;
+}
+
+/* Ajustes de tipografía */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+body.dark-mode h4, body.dark-mode .main-logo,
+body.dark-mode .item-volumen span {
+    color: #ffffff !important;
+}
+
+body.dark-mode p, body.dark-mode .sinopsis-contenido,
+body.dark-mode .no-results {
+    color: #9ca3af !important;
+}
+
+/* Hover en volúmenes */
+body.dark-mode .item-volumen {
+    border-bottom: 1px solid #333 !important;
+}
+
+body.dark-mode .item-volumen:hover {
+    background-color: #2a2a2a !important;
+}
+
+/* Enlaces y botones secundarios */
+body.dark-mode .volver-link a, 
+body.dark-mode .main-menu li a {
+    color: #ffffff !important;
+}
+
+body.dark-mode .search-form input {
+    background-color: #121212 !important;
+    color: #fff !important;
+    border: 1px solid #444 !important;
+}
+
+/* =================================================
+   . CORRECCIÓN PARA LAYOUT CONTRAÍDO (COMPACT-MODE)
+   ================================================= */
+
+/* Si el body tiene la clase compact-mode, forzamos el fondo oscuro */
+body.dark-mode.compact-mode .main-header {
+    background: #121212 !important;
+    background-image: none !important; /* Eliminamos cualquier degradado naranja */
+    border-bottom: 1px solid #333 !important;
+}
+
+/* En el modo compacto, a veces el fondo naranja se queda en un pseudo-elemento o en el body */
+body.dark-mode.compact-mode {
+    background-color: #121212 !important;
+}
+
+/* Si el "efecto contraído" usa una imagen de fondo o un degradado en el header */
+body.dark-mode.compact-mode .main-header::before,
+body.dark-mode.compact-mode .main-header::after {
+    display: none !important; /* Quitamos cualquier adorno naranja extra */
+}
+
+/* REFUERZO: Si el banner naranja sigue ahí, lo volvemos transparente 
+   para que se vea el fondo negro del body */
+body.dark-mode #section-1 {
+    background: transparent !important;
+}
+
+/* =================================================
+   6. CONTROLES Y PROGRESSBAR EN MODO OSCURO
+   ================================================= */
+
+/* Estado inactivo de las etiquetas y la línea superior */
+body.dark-mode .controls label {
+    color: #555 !important; /* Gris oscuro para lo que no está seleccionado */
+    border-top-color: #333 !important;
+}
+
+/* El fondo de la barra de progreso */
+body.dark-mode .progressbar {
+    background-color: #333 !important;
+}
+
+/* El color de la barra que se llena (la activa) */
+body.dark-mode .progressbar-fill {
+    background-color: #ffffff !important;
+}
+
+/* Estado ACTIVO (cuando el banner está seleccionado) */
+body.dark-mode #banner1:checked ~ nav .controls label:nth-child(1),
+body.dark-mode #banner2:checked ~ nav .controls label:nth-child(2) {
+    color: #ffffff !important; /* Texto blanco */
+    border-top-color: #ffffff !important; /* Línea superior blanca */
+}
+
+/* Asegurar que el número (01, 02) también cambie */
+body.dark-mode .controls label span {
+    color: inherit; /* Hereda el blanco del label activo */
+}
+
+/* Esto controla el texto y la línea superior que acabas de encontrar */
+body.dark-mode .controls label {
+    color: #555 !important; 
+    border-top-color: #333 !important;
+}
+
+/* Esto controla las barritas de carga (si es que las añadiste en el HTML) */
+body.dark-mode .progressbar {
+    background-color: #333 !important;
+    height: 2px; /* Asegúrate de que tengan un alto para verse */
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.dark-mode .progressbar-fill {
+    background-color: #ffffff !important;
+    display: block;
+    height: 100%;
+}
+
+/* Esto hace que brillen cuando el banner está activo */
+body.dark-mode #banner1:checked ~ nav .controls label:nth-child(1),
+body.dark-mode #banner2:checked ~ nav .controls label:nth-child(2) {
+    color: #ffffff !important;
+    border-top-color: #ffffff !important;
+}
