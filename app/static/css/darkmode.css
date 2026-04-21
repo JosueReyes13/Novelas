@@ -42,7 +42,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-/* Color activo: Verde Apple */
+/* Color activo */
 input:checked + .slider { 
     background-color: #000000 !important; 
 } 
@@ -72,7 +72,7 @@ input:checked + .slider .moon-icon { opacity: 1; }
 /* Forzar que el Banner cambie de naranja a oscuro */
 body.dark-mode .banner-inner-wrapper {
     /* Esto mata el degradado naranja/amarillo */
-    background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)) !important;
+    background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(43, 43, 43, 0.9)) !important;
 }
 
 body.dark-mode #section-1,
@@ -86,13 +86,13 @@ body.dark-mode .banner {
    3. ESTILOS DE CUERPO Y CONTENIDO
    ================================================= */
 body.dark-mode {
-    background-color: #121212 !important;
+    background-color: #343434 !important;
     color: #e5e7eb !important;
 }
 
 body.dark-mode main, 
 body.dark-mode #content {
-    background-color: #121212 !important;
+    background-color: #1b1b1b !important;
 }
 
 /* Tarjetas, Buscador y Sinopsis */
@@ -196,14 +196,14 @@ body.dark-mode .search-form input {
 
 /* Si el body tiene la clase compact-mode, forzamos el fondo oscuro */
 body.dark-mode.compact-mode .main-header {
-    background: #121212 !important;
+    background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(43, 43, 43, 0.9)) !important;
     background-image: none !important; /* Eliminamos cualquier degradado naranja */
     border-bottom: 1px solid #333 !important;
 }
 
 /* En el modo compacto, a veces el fondo naranja se queda en un pseudo-elemento o en el body */
 body.dark-mode.compact-mode {
-    background-color: #121212 !important;
+   background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(43, 43, 43, 0.9)) !important;
 }
 
 /* Si el "efecto contraído" usa una imagen de fondo o un degradado en el header */
