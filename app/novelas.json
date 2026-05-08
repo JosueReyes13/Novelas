@@ -18,7 +18,7 @@
     ]
   },
   "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka (Danmachi)": {
-    "sinopsis": "Bell Cranel es un aventurero novato que sueña con convertirse en héroe. Un día, conoce a Ais Wallenstein, una espadachina experta de la que se enamora perdidamente. Acompaña a Bell en su viaje para hacerse más fuerte y acercarse a la chica de sus sueños, mientras explora los peligrosos calabozos de la ciudad de Orario.",
+    "sinopsis": "¿Está mal enfrentar los peligros de la mazmorra solo, en un gremio de un solo miembro bendecido por una diosa fracasada? Tal vez. ¿Está mal soñar con jugar al héroe con las desventuradas doncellas de la mazmorra? Tal vez no. Después de una aventura equivocada, Bell descubre rápidamente que todo puede pasar en el laberinto, incluso encuentros fortuitos con mujeres hermosas. ¿El único problema? ¡Él es el que termina con la damisela en apuros!",
     "volumenes": [
       { "vol": "Volumen 1", "id": "1D1hS-TjD7jEXA8zMMm9PXNdpxt4QCZkR" },
       { "vol": "Volumen 2", "id": "1KaskSyly3t8mGSmXZOc0waqR8a-Qhape" },
@@ -38,7 +38,9 @@
       { "vol": "Volumen 16", "id": "1fLfVqK1ZiB6u5ag14LOks7h3pG5HzHxJ" },
       { "vol": "Volumen 17", "id": "17_3IhiLheayOaHQSAL2f2xG1iLl17QIf" },
       { "vol": "Volumen 18", "id": "13692IBIjfefDbF_Y4bpSHUTqCn6fQ_vA" },
-      { "vol": "Volumen 19", "id": "1Xg2Ikc-RN8zGenC4kppXSYcKLsa2l2NK" }
+      { "vol": "Volumen 19", "id": "1Xg2Ikc-RN8zGenC4kppXSYcKLsa2l2NK" },
+      { "vol": "Volumen 20", "id": "10hwol6mkqA5_TgcgEMT7h3zJTgrdpotA" },
+      { "vol": "Volumen 21", "id": "1Swu-jlOotqfBkvZu-A0bWcEzeQpMRjZu" }
     ]
   },
   "Jinsei Gyakuten Uwaki sare": {
@@ -203,6 +205,18 @@
       { "vol": "Volumen 1", "id": "1kgL-ZHXxgFR-_SXXDrWcsIO-b3o6SRRk" },
       { "vol": "Volumen 2", "id": "1tYBHgW7O9E2qIjQWq0_Anp8UJFhbM1Eh" },
       { "vol": "Volumen 3", "id": "1YCOCXubDXkSG6Fvju6BK3n4XtTV7UwWX" }
+    ]
+   }, 
+   "Shitagae, Hatsujou Hauremu no Aruji to Naru": {
+    "sinopsis": "Hace trece años, un terrible monstruo llamado la “Reina Venenosa” atacó el Reino de Jade. Un valiente grupo de aventureros logró derrotarla, pero en el proceso, uno de ellos fue víctima de una maldición. Para sobrevivir, tuvo que transmitirla a su propio hijo. Desde su nacimiento, Kaim Halsberg fue despreciado como un niño maldito, odiado por todos excepto por su difunta madre y Tii, una doncella que trabajaba para su familia. Mientras su padre y su hermana gemela viven en la mansión familiar, Kaim se vio obligado a residir solo en una cabaña en el bosque. Pero todo cambia cuando cierta “doctora” lo ayuda a superar la maldición y a reclamar su poder dormido. Ahora convertido en el “Rey del Veneno”, Kaim emprende un viaje para cumplir su único deseo… ¡Aunque jamás imaginó que su veneno tendría un efecto tan peculiar en las bellezas que conoce en su camino!",
+    "volumenes": [
+      { "vol": "Volumen 1", "id": "19vyJIfGMNAqs_hCcu2ef5KRpX6fFDimX" },
+      { "vol": "Volumen 2", "id": "1edrjfcjfm4CFXtXf6U-7jizmZb8O-JYA" },
+      { "vol": "Volumen 3", "id": "1d7JuXctXy1jRjL9tqBGN9tMVsQ8_wZmv" },
+      { "vol": "Volumen 4", "id": "1UPx-iIPhEOeiGwCN4cfx5y-VnRoPnxPz" },
+      { "vol": "Volumen 5", "id": "1s5mUebiCulJqkOEyNpkQxCUwOEuQjhQk" },
+      { "vol": "Volumen 6", "id": "1Nj08Ytxm61qU4kAZ304LoZjepbJO2YLg" },
+      { "vol": "Volumen 7", "id": "18_epqLvOqAhJkGKlkyShiKz1xRMEV74a" }
     ]
    }
 }
