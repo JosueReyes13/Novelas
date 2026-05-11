@@ -30,16 +30,7 @@
 </section>
 
 {# ══════════════════════════════
-   ENCABEZADO DE BIBLIOTECA
-══════════════════════════════ #}
-<section class="section-header">
-    <h3>Tu Estante Personal</h3>
-    <h2>Novelas Ligeras Disponibles</h2>
-    <div class="line-red"></div>
-</section>
-
-{# ══════════════════════════════
-   ESTILOS DEL FILTRO ALFABÉTICO
+   FILTRO ALFABÉTICO — pegado al carrusel
 ══════════════════════════════ #}
 <style>
   #filtro-abecedario {
@@ -96,7 +87,7 @@
 {# ══════════════════════════════
    GRID DE NOVELAS
 ══════════════════════════════ #}
-<section class="novel-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding-bottom: 50px;">
+<section class="novel-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding: 10px 20px 50px;">
 
     {% for novela in novelas %}
     <div class="novel-card" style="width: 220px; background: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column;">
