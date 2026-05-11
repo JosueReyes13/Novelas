@@ -3,13 +3,44 @@
 {% block title %} Mi Biblioteca {% endblock %}
 
 {% block content %}
+
+{# ══════════════════════════════
+   CARRUSEL 3D — sección de exploración
+══════════════════════════════ #}
+<section id="carrusel-novelas">
+  <div class="carrusel-titulo">
+    <h3>Disponibles en la biblioteca</h3>
+    <h2>Explorar Novelas</h2>
+    <div class="line-red"></div>
+  </div>
+
+  <div class="scene">
+    <div class="a3d" style="--n: {{ novelas|length }}">
+      {% for novela in novelas %}
+      <a class="card-link" href="{{ url_for('ver_novela', nombre=novela) }}" style="--i: {{ loop.index0 }}">
+        {# Misma ruta que novela.html: static/novelas/<nombre>/portada.jpg #}
+        <img src="{{ url_for('static', filename='novelas/' + novela + '/portada.jpg') }}"
+             alt="{{ novela }}"
+             onerror="this.onerror=null; this.src='https://placehold.co/280x400/f38181/fff?text=📚';">
+        <div class="card-label">{{ novela }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ══════════════════════════════
+   ENCABEZADO DE BIBLIOTECA
+══════════════════════════════ #}
 <section class="section-header">
     <h3>Tu Estante Personal</h3>
     <h2>Novelas Ligeras Disponibles</h2>
     <div class="line-red"></div>
 </section>
 
-{# ── Estilos del filtro alfabético ── #}
+{# ══════════════════════════════
+   ESTILOS DEL FILTRO ALFABÉTICO
+══════════════════════════════ #}
 <style>
   #filtro-abecedario {
     display: flex;
@@ -46,7 +77,6 @@
     color: #fff;
   }
 
-  /* Letras sin novelas: se ven apagadas */
   .filtro-btn.sin-novelas {
     opacity: 0.3;
     cursor: default;
@@ -61,25 +91,28 @@
   }
 </style>
 
-{# La barra #filtro-abecedario se inyecta aquí automáticamente por el script JS #}
+{# El JS inyecta la barra #filtro-abecedario automáticamente aquí #}
 
+{# ══════════════════════════════
+   GRID DE NOVELAS
+══════════════════════════════ #}
 <section class="novel-grid" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; padding-bottom: 50px;">
-    
+
     {% for novela in novelas %}
     <div class="novel-card" style="width: 220px; background: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column;">
-        
+
         <div class="cover" style="height: 300px; background: #eee; overflow: hidden;">
-            <img src="{{ url_for('static', filename='novelas/' + novela + '/portada.jpg') }}" 
-                 alt="{{ novela }}" 
+            <img src="{{ url_for('static', filename='novelas/' + novela + '/portada.jpg') }}"
+                 alt="{{ novela }}"
                  style="width: 100%; height: 100%; object-fit: cover;"
                  onerror="this.onerror=null; this.src='https://placehold.co/220x300?text=Sin+Portada';">
         </div>
 
         <div class="info" style="padding: 5px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
             <h4 style="margin-bottom: 10px; color: #333; font-size: 0.9em; height: 40px; overflow: hidden;">{{ novela }}</h4>
-            
-            <a href="{{ url_for('ver_novela', nombre=novela) }}" 
-                class="learn-more-button" 
+
+            <a href="{{ url_for('ver_novela', nombre=novela) }}"
+                class="learn-more-button"
                 style="font-size: 11px; border: 2px solid #f38181; color: #f38181; padding: 5px 10px; display: inline-block; text-decoration: none;">
                 VER VOLÚMENES
             </a>
@@ -91,6 +124,8 @@
 
 </section>
 
-{# ── Script del filtro ── #}
+{# ══════════════════════════════
+   SCRIPT DEL FILTRO ALFABÉTICO
+══════════════════════════════ #}
 <script src="{{ url_for('static', filename='js/filtro_abecedario.js') }}"></script>
 {% endblock %}
